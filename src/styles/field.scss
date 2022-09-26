@@ -1,0 +1,20 @@
+@use "../styles/global.scss" as var;
+
+.field {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  & .field_input {
+    padding: var.$stepSmall;
+    border-radius: var.$stepSmall;
+    border-color: var.$midGray;
+    font-size: var.$mainFontSize;
+    text-overflow: ellipsis;
+  }
+
+  & .field_label {
+    padding: calc(var.$stepSmall / 2);
+    color: var.$darkGray;
+  }
+}

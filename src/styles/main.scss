@@ -1,0 +1,38 @@
+@use "../styles/global.scss" as var;
+
+:root {
+  font-family: sans-serif;
+}
+
+main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+.container {
+  margin: var.$stepBig auto;
+  padding: var.$stepBig;
+  border-radius: var.$stepMed;
+  box-shadow: 0px var.$stepSmall var.$stepBig var.$lightGray;
+  width: 600px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var.$stepBig * 1.5);
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: var.$stepSmall;
+}
+
+.hidden {
+  display: none;
+}
